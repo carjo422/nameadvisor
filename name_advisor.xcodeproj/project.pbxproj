@@ -7,14 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7B21C20820CC58F0000729BC /* nameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B21C20720CC58F0000729BC /* nameViewController.swift */; };
+		7B21C20E20CCECC5000729BC /* varObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B21C20D20CCECC5000729BC /* varObject.swift */; };
 		7BE1906120CB11CA0004BEBD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE1906020CB11CA0004BEBD /* AppDelegate.swift */; };
 		7BE1906320CB11CA0004BEBD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE1906220CB11CA0004BEBD /* ViewController.swift */; };
 		7BE1906620CB11CA0004BEBD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BE1906420CB11CA0004BEBD /* Main.storyboard */; };
 		7BE1906820CB11CA0004BEBD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BE1906720CB11CA0004BEBD /* Assets.xcassets */; };
 		7BE1906B20CB11CA0004BEBD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BE1906920CB11CA0004BEBD /* LaunchScreen.storyboard */; };
+		7BE1907320CBDBCB0004BEBD /* nameSelectController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE1907220CBDBCB0004BEBD /* nameSelectController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7B21C20720CC58F0000729BC /* nameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = nameViewController.swift; sourceTree = "<group>"; };
+		7B21C20D20CCECC5000729BC /* varObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = varObject.swift; path = ../varObject.swift; sourceTree = "<group>"; };
 		7BE1905D20CB11CA0004BEBD /* name_advisor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = name_advisor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BE1906020CB11CA0004BEBD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7BE1906220CB11CA0004BEBD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +27,7 @@
 		7BE1906720CB11CA0004BEBD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7BE1906A20CB11CA0004BEBD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7BE1906C20CB11CA0004BEBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7BE1907220CBDBCB0004BEBD /* nameSelectController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = nameSelectController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +62,9 @@
 			children = (
 				7BE1906020CB11CA0004BEBD /* AppDelegate.swift */,
 				7BE1906220CB11CA0004BEBD /* ViewController.swift */,
+				7B21C20D20CCECC5000729BC /* varObject.swift */,
+				7BE1907220CBDBCB0004BEBD /* nameSelectController.swift */,
+				7B21C20720CC58F0000729BC /* nameViewController.swift */,
 				7BE1906420CB11CA0004BEBD /* Main.storyboard */,
 				7BE1906720CB11CA0004BEBD /* Assets.xcassets */,
 				7BE1906920CB11CA0004BEBD /* LaunchScreen.storyboard */,
@@ -139,6 +148,9 @@
 			files = (
 				7BE1906320CB11CA0004BEBD /* ViewController.swift in Sources */,
 				7BE1906120CB11CA0004BEBD /* AppDelegate.swift in Sources */,
+				7B21C20E20CCECC5000729BC /* varObject.swift in Sources */,
+				7BE1907320CBDBCB0004BEBD /* nameSelectController.swift in Sources */,
+				7B21C20820CC58F0000729BC /* nameViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -204,7 +216,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -247,9 +259,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				SDKROOT = iphoneos;
+				SDKROOT = iphoneos10.2;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -300,6 +312,7 @@
 				7BE1907120CB11CA0004BEBD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

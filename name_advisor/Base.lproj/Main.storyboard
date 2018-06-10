@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Title-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="name_advisor" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="nameSelectController" customModule="name_advisor" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -28,13 +28,8 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bn5-As-Ze3">
-                                <rect key="frame" x="112" y="318" width="152" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Lägg till"/>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Lägg till 3 namn som du gillar" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fLM-6C-6Wm">
-                                <rect key="frame" x="30" y="124" width="314" height="21"/>
+                                <rect key="frame" x="30" y="88" width="314" height="57"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <nil key="textColor"/>
@@ -47,18 +42,98 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oOY-NE-5A3">
+                                <rect key="frame" x="16" y="629" width="136" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Gå tillbaka"/>
+                                <connections>
+                                    <segue destination="3CT-bk-HaO" kind="show" id="cN0-rs-c05"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bn5-As-Ze3">
+                                <rect key="frame" x="111" y="254" width="152" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Lägg till"/>
+                                <connections>
+                                    <action selector="addNewName:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Snz-2d-LF8"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.88836952905545996" green="0.94123603667176114" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Title" id="IJa-9V-XcF"/>
+                    <connections>
+                        <outlet property="addName" destination="bn5-As-Ze3" id="RL0-px-Slp"/>
+                        <outlet property="inputName" destination="a8P-SK-ArQ" id="aBT-v9-C45"/>
+                        <outlet property="n_chosen_text" destination="WoP-X8-j4A" id="oNQ-sc-rFO"/>
+                        <segue destination="dcF-Kv-oUe" kind="presentation" identifier="nameSegue" id="Iu9-i6-dKN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-134" y="-143"/>
+            <point key="canvasLocation" x="-135.19999999999999" y="-143.47826086956522"/>
+        </scene>
+        <!--Name View Controller-->
+        <scene sceneID="R5o-8p-gxQ">
+            <objects>
+                <viewController id="dcF-Kv-oUe" customClass="nameViewController" customModule="name_advisor" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3Gh-Dg-zWr"/>
+                        <viewControllerLayoutGuide type="bottom" id="Cuc-3P-1m9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Mgq-EF-f78">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Erika" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u7X-dS-QAX">
+                                <rect key="frame" x="32" y="161" width="311" height="74"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Da5-MY-XqG">
+                                <rect key="frame" x="243" y="299" width="69" height="69"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="thumb"/>
+                                <connections>
+                                    <action selector="bressButton1:" destination="dcF-Kv-oUe" eventType="touchUpInside" id="KPc-7j-eUW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4T0-Hv-MEj">
+                                <rect key="frame" x="67" y="320" width="69" height="69"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="thumb-dwn"/>
+                                <connections>
+                                    <action selector="bressButton2:" destination="dcF-Kv-oUe" eventType="touchUpInside" id="0yN-LM-MBx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mwY-ID-vyy">
+                                <rect key="frame" x="101" y="597" width="172" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Starta om "/>
+                                <connections>
+                                    <segue destination="3CT-bk-HaO" kind="show" id="IdT-Ka-chX"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.88627450980392153" green="0.93725490196078431" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <connections>
+                        <outlet property="button1" destination="Da5-MY-XqG" id="tFB-KF-P0S"/>
+                        <outlet property="nameText" destination="u7X-dS-QAX" id="IgD-ha-bOg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8B5-L2-1fz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-135.19999999999999" y="717.39130434782612"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="nhs-dS-vBY">
             <objects>
-                <viewController id="3CT-bk-HaO" sceneMemberID="viewController">
+                <viewController id="3CT-bk-HaO" customClass="ViewController" customModule="name_advisor" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="CBt-RJ-Xbz"/>
                         <viewControllerLayoutGuide type="bottom" id="RZW-jJ-6bs"/>
@@ -66,12 +141,47 @@
                     <view key="view" contentMode="scaleToFill" id="nDn-WZ-2c5">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UOg-GD-Kj8">
+                                <rect key="frame" x="214" y="280" width="99" height="106"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="male"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="GY0-wN-Htq"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tjejnamn / Killnamn" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hDq-h3-wiQ">
+                                <rect key="frame" x="62" y="125" width="251" height="88"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eh4-9u-zuw">
+                                <rect key="frame" x="88" y="270" width="90" height="127"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="female"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="f6w-M8-eRr"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="0.88627450980392153" green="0.93725490196078431" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IcV-So-Zdf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="663" y="-143"/>
+            <point key="canvasLocation" x="661.60000000000002" y="-143.47826086956522"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="female" width="2000" height="3015"/>
+        <image name="male" width="1024" height="1024"/>
+        <image name="thumb" width="512" height="512"/>
+        <image name="thumb-dwn" width="512" height="512"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="f6w-M8-eRr"/>
+        <segue reference="IdT-Ka-chX"/>
+    </inferredMetricsTieBreakers>
 </document>
