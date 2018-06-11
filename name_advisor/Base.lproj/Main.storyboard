@@ -22,28 +22,36 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="a8P-SK-ArQ">
-                                <rect key="frame" x="85" y="216" width="205" height="30"/>
+                                <rect key="frame" x="85" y="247" width="205" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bn5-As-Ze3">
+                                <rect key="frame" x="111" y="285" width="152" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Lägg till"/>
+                                <connections>
+                                    <action selector="addNewName:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Snz-2d-LF8"/>
+                                </connections>
+                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Lägg till 3 namn som du gillar" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fLM-6C-6Wm">
-                                <rect key="frame" x="30" y="88" width="314" height="57"/>
+                                <rect key="frame" x="30" y="132" width="314" height="57"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0/3 namn inlagda" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WoP-X8-j4A">
-                                <rect key="frame" x="30" y="187" width="314" height="21"/>
+                                <rect key="frame" x="30" y="218" width="314" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oOY-NE-5A3">
-                                <rect key="frame" x="16" y="629" width="136" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oOY-NE-5A3">
+                                <rect key="frame" x="119" y="597" width="136" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" title="Gå tillbaka"/>
@@ -51,14 +59,10 @@
                                     <segue destination="3CT-bk-HaO" kind="show" id="cN0-rs-c05"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bn5-As-Ze3">
-                                <rect key="frame" x="111" y="254" width="152" height="30"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="male" highlightedImage="male" translatesAutoresizingMaskIntoConstraints="NO" id="0tG-hN-lOF">
+                                <rect key="frame" x="161" y="28" width="52" height="64"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Lägg till"/>
-                                <connections>
-                                    <action selector="addNewName:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Snz-2d-LF8"/>
-                                </connections>
-                            </button>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.88836952905545996" green="0.94123603667176114" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
@@ -67,6 +71,7 @@
                         <outlet property="addName" destination="bn5-As-Ze3" id="RL0-px-Slp"/>
                         <outlet property="inputName" destination="a8P-SK-ArQ" id="aBT-v9-C45"/>
                         <outlet property="n_chosen_text" destination="WoP-X8-j4A" id="oNQ-sc-rFO"/>
+                        <outlet property="top_icon" destination="0tG-hN-lOF" id="e2R-LA-Qug"/>
                         <segue destination="dcF-Kv-oUe" kind="presentation" identifier="nameSegue" id="Iu9-i6-dKN"/>
                     </connections>
                 </viewController>
@@ -143,25 +148,27 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UOg-GD-Kj8">
-                                <rect key="frame" x="214" y="280" width="99" height="106"/>
+                                <rect key="frame" x="214" y="270" width="99" height="106"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="male"/>
                                 <connections>
+                                    <action selector="female:" destination="3CT-bk-HaO" eventType="touchUpInside" id="saM-Ia-wAz"/>
                                     <segue destination="BYZ-38-t0r" kind="show" id="GY0-wN-Htq"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tjejnamn / Killnamn" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hDq-h3-wiQ">
-                                <rect key="frame" x="62" y="125" width="251" height="88"/>
+                                <rect key="frame" x="62" y="124" width="251" height="88"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eh4-9u-zuw">
-                                <rect key="frame" x="88" y="270" width="90" height="127"/>
+                                <rect key="frame" x="62" y="270" width="90" height="127"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="female"/>
                                 <connections>
+                                    <action selector="male:" destination="3CT-bk-HaO" eventType="touchUpInside" id="7Nj-0j-fcb"/>
                                     <segue destination="BYZ-38-t0r" kind="show" id="f6w-M8-eRr"/>
                                 </connections>
                             </button>
@@ -182,6 +189,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="f6w-M8-eRr"/>
-        <segue reference="IdT-Ka-chX"/>
+        <segue reference="cN0-rs-c05"/>
     </inferredMetricsTieBreakers>
 </document>

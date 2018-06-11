@@ -13,6 +13,47 @@ class nameSelectController: UIViewController {
     var n_names = 0
     var n = CGFloat(0)
     
+    @IBOutlet var top_icon: UIImageView!
+    
+    func count_vowels(str:String) -> CGFloat {
+        
+        var n_vowels = CGFloat(0)
+        
+        for i in str.characters {
+            
+            if i == "a" || i == "o" || i == "u" || i == "å" || i == "e" || i == "i" || i == "y" || i == "ä" || i == "ö" {
+                n_vowels = n_vowels+1
+            }
+        }
+        
+        return(n_vowels)
+        
+        
+    }
+    
+    func get_hardness(str:String) -> CGFloat {
+        
+        var hardness = CGFloat(0)
+        var nhard = CGFloat(0)
+        var nsoft = CGFloat(0)
+        
+        for i in str.characters {
+            
+            if i == "a" || i == "o" || i == "u" || i == "å" || i == "e" || i == "i" || i == "y" || i == "ä" || i == "ö" || i == "b" || i == "d" || i == "g" || i == "h" || i == "j" || i == "l" || i == "m" || i == "n" || i == "r" || i == "v"  {
+                nsoft = nsoft+1
+            }
+            else {
+                nhard = nhard+1
+            }
+        }
+        
+        hardness = nhard / (nhard+nsoft)
+        
+        return(hardness)
+        
+    }
+    
+    
     func get_name_data(name: String) {
         
         var pop = CGFloat(0)
@@ -21,6 +62,8 @@ class nameSelectController: UIViewController {
         var stav = CGFloat(2)
         var hard = CGFloat(0.3)
         
+        var get_match = 0
+        
         for i in 0...varObject.mnames.count-1 {
             if name == varObject.mnames[i].lowercased() {
                 pop = CGFloat(varObject.mpop[i])
@@ -28,7 +71,18 @@ class nameSelectController: UIViewController {
                 urs = CGFloat(varObject.murs[i])
                 stav = CGFloat(varObject.mstav[i])
                 hard = CGFloat(varObject.mhard[i])
+                
+                get_match = 1
+                
             }
+        }
+        
+        if get_match == 0 {
+            pop = CGFloat(0)
+            trend = CGFloat(-0.5)
+            urs = CGFloat(1)
+            stav = count_vowels(str: name)
+            hard = get_hardness(str: name)
         }
         
         varObject.mpreffull[0] = varObject.mpreffull[0] + pop
@@ -51,7 +105,6 @@ class nameSelectController: UIViewController {
         for i in 0...6 {
             varObject.mpref[i] = varObject.mpreffull[i]/n
         }
-        print(n)
         
     }
 
@@ -66,6 +119,7 @@ class nameSelectController: UIViewController {
     @IBAction func addNewName(_ sender: Any) {
         
         var name = inputName.text?.lowercased()
+        name = name?.replacingOccurrences(of: " ", with: "")
         
         if name != nil && name != "" {
             
@@ -96,6 +150,10 @@ class nameSelectController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if ViewController.gender == 1 {
+            top_icon.image = UIImage(named: "female.png")
+        }
         
         varObject.mpref = [CGFloat](repeating: 0, count: 7)
         varObject.mpreffull = [CGFloat](repeating: 0, count: 7)

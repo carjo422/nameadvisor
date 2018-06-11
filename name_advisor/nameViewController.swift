@@ -47,16 +47,16 @@ class nameViewController: UIViewController {
             
             mmatch[i] = mmatch[i]+(CGFloat(varObject.mpop[i])-ref[0])*(CGFloat(varObject.mpop[i])-ref[0])*2.5
             mmatch[i] = mmatch[i]+(CGFloat(varObject.mtrend[i])-ref[1])*(CGFloat(varObject.mtrend[i])-ref[1])
-            mmatch[i] = mmatch[i]+(CGFloat(varObject.mstav[i])-ref[2])*(CGFloat(varObject.mstav[i])-ref[2])/4
+            mmatch[i] = mmatch[i]+(CGFloat(varObject.mstav[i])-ref[2])*(CGFloat(varObject.mstav[i])-ref[2])/6
             mmatch[i] = mmatch[i]+(CGFloat(varObject.mhard[i])-ref[3])*(CGFloat(varObject.mhard[i])-ref[3])*2
             
             var urs_vektor = [CGFloat(0),CGFloat(0),CGFloat(0)]
             
             urs_vektor[varObject.murs[i]] = 1
             
-            mmatch[i] = mmatch[i]+(urs_vektor[0]-ref[4])*(urs_vektor[0]-ref[4])
-            mmatch[i] = mmatch[i]+(urs_vektor[1]-ref[5])*(urs_vektor[1]-ref[5])
-            mmatch[i] = mmatch[i]+(urs_vektor[2]-ref[6])*(urs_vektor[2]-ref[6])
+            mmatch[i] = mmatch[i]+(urs_vektor[0]-ref[4])*(urs_vektor[0]-ref[4])/6
+            mmatch[i] = mmatch[i]+(urs_vektor[1]-ref[5])*(urs_vektor[1]-ref[5])/6
+            mmatch[i] = mmatch[i]+(urs_vektor[2]-ref[6])*(urs_vektor[2]-ref[6])/6
             
             
         }
