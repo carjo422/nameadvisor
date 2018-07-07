@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "7BE1905C20CB11CA0004BEBD"
-               BuildableName = "name_advisor.app"
-               BlueprintName = "name_advisor"
-               ReferencedContainer = "container:name_advisor.xcodeproj">
+               BuildableName = "Namn pa&#x30a; Ungen.app"
+               BlueprintName = "Namn pa&#x30a; Ungen"
+               ReferencedContainer = "container:Namn pa&#x30a; Ungen.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "7BE1905C20CB11CA0004BEBD"
-            BuildableName = "name_advisor.app"
-            BlueprintName = "name_advisor"
-            ReferencedContainer = "container:name_advisor.xcodeproj">
+            BuildableName = "Namn pa&#x30a; Ungen.app"
+            BlueprintName = "Namn pa&#x30a; Ungen"
+            ReferencedContainer = "container:Namn pa&#x30a; Ungen.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -56,9 +56,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "7BE1905C20CB11CA0004BEBD"
-            BuildableName = "name_advisor.app"
-            BlueprintName = "name_advisor"
-            ReferencedContainer = "container:name_advisor.xcodeproj">
+            BuildableName = "Namn pa&#x30a; Ungen.app"
+            BlueprintName = "Namn pa&#x30a; Ungen"
+            ReferencedContainer = "container:Namn pa&#x30a; Ungen.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -75,9 +75,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "7BE1905C20CB11CA0004BEBD"
-            BuildableName = "name_advisor.app"
-            BlueprintName = "name_advisor"
-            ReferencedContainer = "container:name_advisor.xcodeproj">
+            BuildableName = "Namn pa&#x30a; Ungen.app"
+            BlueprintName = "Namn pa&#x30a; Ungen"
+            ReferencedContainer = "container:Namn pa&#x30a; Ungen.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

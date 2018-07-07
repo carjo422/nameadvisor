@@ -13,21 +13,21 @@
 		7BE1906320CB11CA0004BEBD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE1906220CB11CA0004BEBD /* ViewController.swift */; };
 		7BE1906620CB11CA0004BEBD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BE1906420CB11CA0004BEBD /* Main.storyboard */; };
 		7BE1906820CB11CA0004BEBD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BE1906720CB11CA0004BEBD /* Assets.xcassets */; };
-		7BE1906B20CB11CA0004BEBD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BE1906920CB11CA0004BEBD /* LaunchScreen.storyboard */; };
 		7BE1907320CBDBCB0004BEBD /* nameSelectController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE1907220CBDBCB0004BEBD /* nameSelectController.swift */; };
+		7BEA496620D26CF400C9A715 /* topList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BEA496520D26CF400C9A715 /* topList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7B21C20720CC58F0000729BC /* nameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = nameViewController.swift; sourceTree = "<group>"; };
 		7B21C20D20CCECC5000729BC /* varObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = varObject.swift; path = ../varObject.swift; sourceTree = "<group>"; };
-		7BE1905D20CB11CA0004BEBD /* name_advisor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = name_advisor.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7BE1905D20CB11CA0004BEBD /* Namn på Ungen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Namn på Ungen.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BE1906020CB11CA0004BEBD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7BE1906220CB11CA0004BEBD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7BE1906520CB11CA0004BEBD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7BE1906720CB11CA0004BEBD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		7BE1906A20CB11CA0004BEBD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7BE1906C20CB11CA0004BEBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7BE1907220CBDBCB0004BEBD /* nameSelectController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = nameSelectController.swift; sourceTree = "<group>"; };
+		7BEA496520D26CF400C9A715 /* topList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = topList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +52,7 @@
 		7BE1905E20CB11CA0004BEBD /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7BE1905D20CB11CA0004BEBD /* name_advisor.app */,
+				7BE1905D20CB11CA0004BEBD /* Namn på Ungen.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -66,8 +66,8 @@
 				7BE1907220CBDBCB0004BEBD /* nameSelectController.swift */,
 				7B21C20720CC58F0000729BC /* nameViewController.swift */,
 				7BE1906420CB11CA0004BEBD /* Main.storyboard */,
+				7BEA496520D26CF400C9A715 /* topList.swift */,
 				7BE1906720CB11CA0004BEBD /* Assets.xcassets */,
-				7BE1906920CB11CA0004BEBD /* LaunchScreen.storyboard */,
 				7BE1906C20CB11CA0004BEBD /* Info.plist */,
 			);
 			path = name_advisor;
@@ -76,9 +76,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		7BE1905C20CB11CA0004BEBD /* name_advisor */ = {
+		7BE1905C20CB11CA0004BEBD /* Namn på Ungen */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7BE1906F20CB11CA0004BEBD /* Build configuration list for PBXNativeTarget "name_advisor" */;
+			buildConfigurationList = 7BE1906F20CB11CA0004BEBD /* Build configuration list for PBXNativeTarget "Namn på Ungen" */;
 			buildPhases = (
 				7BE1905920CB11CA0004BEBD /* Sources */,
 				7BE1905A20CB11CA0004BEBD /* Frameworks */,
@@ -88,9 +88,9 @@
 			);
 			dependencies = (
 			);
-			name = name_advisor;
+			name = "Namn på Ungen";
 			productName = name_advisor;
-			productReference = 7BE1905D20CB11CA0004BEBD /* name_advisor.app */;
+			productReference = 7BE1905D20CB11CA0004BEBD /* Namn på Ungen.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -110,7 +110,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 7BE1905820CB11C90004BEBD /* Build configuration list for PBXProject "name_advisor" */;
+			buildConfigurationList = 7BE1905820CB11C90004BEBD /* Build configuration list for PBXProject "Namn på Ungen" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -123,7 +123,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				7BE1905C20CB11CA0004BEBD /* name_advisor */,
+				7BE1905C20CB11CA0004BEBD /* Namn på Ungen */,
 			);
 		};
 /* End PBXProject section */
@@ -133,7 +133,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7BE1906B20CB11CA0004BEBD /* LaunchScreen.storyboard in Resources */,
 				7BE1906820CB11CA0004BEBD /* Assets.xcassets in Resources */,
 				7BE1906620CB11CA0004BEBD /* Main.storyboard in Resources */,
 			);
@@ -149,6 +148,7 @@
 				7BE1906320CB11CA0004BEBD /* ViewController.swift in Sources */,
 				7BE1906120CB11CA0004BEBD /* AppDelegate.swift in Sources */,
 				7B21C20E20CCECC5000729BC /* varObject.swift in Sources */,
+				7BEA496620D26CF400C9A715 /* topList.swift in Sources */,
 				7BE1907320CBDBCB0004BEBD /* nameSelectController.swift in Sources */,
 				7B21C20820CC58F0000729BC /* nameViewController.swift in Sources */,
 			);
@@ -163,14 +163,6 @@
 				7BE1906520CB11CA0004BEBD /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		7BE1906920CB11CA0004BEBD /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7BE1906A20CB11CA0004BEBD /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -274,7 +266,7 @@
 				DEVELOPMENT_TEAM = 239E2Q3UMH;
 				INFOPLIST_FILE = name_advisor/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "dns.name-advisor";
+				PRODUCT_BUNDLE_IDENTIFIER = dns.nmadvice;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -287,7 +279,7 @@
 				DEVELOPMENT_TEAM = 239E2Q3UMH;
 				INFOPLIST_FILE = name_advisor/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "dns.name-advisor";
+				PRODUCT_BUNDLE_IDENTIFIER = dns.nmadvice;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -296,7 +288,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		7BE1905820CB11C90004BEBD /* Build configuration list for PBXProject "name_advisor" */ = {
+		7BE1905820CB11C90004BEBD /* Build configuration list for PBXProject "Namn på Ungen" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7BE1906D20CB11CA0004BEBD /* Debug */,
@@ -305,7 +297,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7BE1906F20CB11CA0004BEBD /* Build configuration list for PBXNativeTarget "name_advisor" */ = {
+		7BE1906F20CB11CA0004BEBD /* Build configuration list for PBXNativeTarget "Namn på Ungen" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7BE1907020CB11CA0004BEBD /* Debug */,
